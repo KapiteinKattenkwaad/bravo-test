@@ -1,0 +1,76 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+::selection {
+  background-color: #161615;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  background-color: #192926;
+  padding: 24px 14px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0 0 0 auto;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+}
+nav li a {
+  display: block;
+  color: #70c7af;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: color 0.3s ease-in;
+}
+nav li a:hover {
+  color: #ffffff;
+}
+
+.header {
+  height: 70vh;
+  position: relative;
+}
+.header__img img {
+  object-fit: cover;
+  width: 100vw;
+}
+.header__title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+}
+.header__title h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+.header__title time {
+  font-size: 2.8rem;
+}
+
+/*# sourceMappingURL=output.css.map */

@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+::selection {
+  background-color: $color-black;
+  color: $color-white;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 10px;
+}
