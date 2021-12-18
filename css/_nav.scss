@@ -1,19 +1,58 @@
-nav {
+.nav {
   display: flex;
   background-color: $green-dark;
   padding: 24px 14px;
   position: fixed;
   width: 100%;
   z-index: 99;
-  .logo {
 
+  .logo {
+    width: 110px;
+    z-index: 9;
   }
-  ul {
+
+  &__menu {
+    margin-left: auto;
+    cursor: pointer;
+    &--open {
+      @media only screen and (max-width: 768px) {
+        display: block;
+      }
+    }
+
+    &--close {
+      display: none;
+      z-index: 9;
+    }
+  }
+
+  &__content {
     list-style-type: none;
     margin: 0 0 0 auto;
     padding: 0;
     overflow: hidden;
     display: flex;
+    @media only screen and (max-width: 768px) {
+      &--wrapper {
+        display: none;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(25, 41, 38, .9);
+        overflow-x: hidden;
+        transition: all .5s ease-in;
+      }
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+      flex-direction: column;
+    }
   }
 
   li a {
@@ -25,6 +64,9 @@ nav {
     padding: 14px 16px;
     text-decoration: none;
     transition: color .3s ease-in;
+    @media only screen and (max-width: 768px) {
+      font-size: 24px;
+    }
   }
 
   li a:hover {

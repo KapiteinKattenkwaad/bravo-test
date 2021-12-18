@@ -13,35 +13,39 @@
     <link rel="stylesheet" href="css/output.css">
 </head>
 <body>
-<nav>
+<nav class="nav">
     <img class="logo" src="./assets/logo.svg" alt="Logo MXDC">
-    <ul>
-        <li>
-            <a href="#">
-                Program
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                Partners
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                Locations
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                About MXDC
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                Contact us
-            </a>
-        </li>
-    </ul>
+    <img id="js-nav-btn" class="nav__menu nav__menu--open" src="./assets/menu_icon.svg" alt="toggle menu">
+    <img id="js-nav-btn-close" class="nav__menu nav__menu--close" src="./assets/close_icon.svg" alt="close menu">
+    <div id="js-nav-content" class="nav__content--wrapper">
+        <ul class="nav__content">
+            <li>
+                <a href="#">
+                    Program
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Partners
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Locations
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    About MXDC
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Contact us
+                </a>
+            </li>
+        </ul>
+    </div>
 </nav>
 
 <header class="header">
@@ -67,8 +71,30 @@
     </div>
 </section>
 
-<footer>
-
+<footer class="footer">
+    <img class="logo" src="./assets/logo.svg" alt="Logo MXDC">
+    <ul>
+        <li>
+            <a href="#">
+                Privacy
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                Terms and Conditions
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                Frequently Asked Questions
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                Contact us
+            </a>
+        </li>
+    </ul>
 </footer>
 
 <script src="js/index.js"></script>

@@ -1,5 +1,4 @@
 .header {
-  height: 70vh;
   position: relative;
   &__img {
     img {
@@ -7,6 +6,9 @@
       object-fit: cover;
       width: 100vw;
       height: 70vh;
+      @media only screen and (max-width: 768px) {
+        margin-top: 75px;
+      }
     }
   }
   &__title {

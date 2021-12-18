@@ -1,4 +1,4 @@
-console.log('hello')
+//getting events
 
 fetch('https://87197325.blob.core.windows.net/fed-technical-test/events.json')
     .then(function (response) {
@@ -25,3 +25,39 @@ function appendData(data) {
         mainContainer.appendChild(event);
     }
 }
+
+//mobile nav
+
+const mobileBtn = document.getElementById("js-nav-btn");
+const mobileContent = document.getElementById("js-nav-content");
+const mobileBtnClose = document.getElementById("js-nav-btn-close");
+
+function closeMenu () {
+    mobileContent.style.display = "none"
+    mobileBtnClose.style.display = "none"
+    mobileBtn.style.display = "block"
+}
+
+function openMenu () {
+    mobileContent.style.display = "flex"
+    mobileBtnClose.style.display = "block"
+    mobileBtn.style.display = "none"
+}
+
+mobileBtn.addEventListener('click', () => {
+    if ( mobileContent.style.display !== "flex") {
+        openMenu();
+    } else {
+        closeMenu()
+    }
+})
+mobileBtnClose.addEventListener('click', () => {
+    if (mobileContent.style.display === "flex") {
+        closeMenu();
+    } else {
+        openMenu()
+    }
+})
+
+
+
