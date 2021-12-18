@@ -36,6 +36,11 @@ body {
   width: 100%;
   z-index: 99;
 }
+@media only screen and (min-width: 1200px) {
+  .nav {
+    padding: 24px 32px;
+  }
+}
 .nav .logo {
   width: 110px;
   z-index: 9;
@@ -253,6 +258,11 @@ body {
 @media only screen and (max-width: 768px) {
   .footer {
     flex-direction: column;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .footer {
+    padding: 24px 32px;
   }
 }
 .footer .logo {
