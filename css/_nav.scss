@@ -2,6 +2,9 @@ nav {
   display: flex;
   background-color: $green-dark;
   padding: 24px 14px;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
   .logo {
 
   }

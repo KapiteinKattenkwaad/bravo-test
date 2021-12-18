@@ -3,8 +3,10 @@
   position: relative;
   &__img {
     img {
+      margin-top: 95px;
       object-fit: cover;
       width: 100vw;
+      height: 70vh;
     }
   }
   &__title {

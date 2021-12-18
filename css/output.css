@@ -27,6 +27,9 @@ nav {
   display: flex;
   background-color: #192926;
   padding: 24px 14px;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
 }
 nav ul {
   list-style-type: none;
@@ -54,8 +57,10 @@ nav li a:hover {
   position: relative;
 }
 .header__img img {
+  margin-top: 95px;
   object-fit: cover;
   width: 100vw;
+  height: 70vh;
 }
 .header__title {
   position: absolute;
@@ -71,6 +76,52 @@ nav li a:hover {
 }
 .header__title time {
   font-size: 2.8rem;
+}
+
+.events {
+  display: grid;
+  grid-gap: 24px 28px;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 140px 0;
+}
+@media only screen and (max-width: 768px) {
+  .events {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .events {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .events {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.events__detail {
+  width: 452px;
+  background-color: #ececec;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 1400px) {
+  .events__detail {
+    margin-bottom: 100px;
+  }
+  .events__detail:nth-child(2), .events__detail:nth-child(5) {
+    transform: translateY(40px);
+  }
+  .events__detail:nth-child(3), .events__detail:nth-child(6) {
+    transform: translateY(80px);
+  }
+}
+.events__detail--inner {
+  padding: 28px 16px;
+}
+.events__detail--inner p {
+  margin-top: 12px;
 }
 
 /*# sourceMappingURL=output.css.map */
