@@ -102,9 +102,23 @@ nav li a:hover {
   }
 }
 .events__detail {
-  width: 452px;
   background-color: #ececec;
   margin: 0 auto;
+  position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .events__detail {
+    display: flex;
+  }
+  .events__detail--img {
+    width: 140px;
+    object-fit: cover;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .events__detail {
+    width: 452px;
+  }
 }
 @media only screen and (min-width: 1400px) {
   .events__detail {
@@ -120,8 +134,25 @@ nav li a:hover {
 .events__detail--inner {
   padding: 28px 16px;
 }
+@media only screen and (max-width: 768px) {
+  .events__detail--inner {
+    padding: 28px 50px 24px 16px;
+  }
+}
 .events__detail--inner p {
   margin-top: 12px;
+}
+.events__detail--btn {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 12px;
+}
+@media only screen and (max-width: 768px) {
+  .events__detail--btn {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */

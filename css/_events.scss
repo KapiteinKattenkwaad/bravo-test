@@ -15,9 +15,19 @@
     grid-template-columns: repeat(3, 1fr);
   }
   &__detail {
-    width: 452px;
     background-color: $grey-dark;
     margin: 0 auto;
+    position: relative;
+    @media only screen and (max-width: 768px) {
+      display: flex;
+      &--img {
+        width: 140px;
+        object-fit: cover;
+      }
+    }
+    @media only screen and (min-width: 1400px) {
+      width: 452px;
+    }
     @media only screen and (min-width: 1400px) {
       margin-bottom: 100px;
       &:nth-child(2), &:nth-child(5) {
@@ -29,9 +39,22 @@
     }
 
     &--inner {
+      @media only screen and (max-width: 768px) {
+        padding: 28px 50px 24px 16px;
+      }
       padding: 28px 16px;
       p {
         margin-top: 12px;
+      }
+    }
+    &--btn {
+      display: none;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      right: 12px;
+      @media only screen and (max-width: 768px) {
+        display: block;
       }
     }
   }
